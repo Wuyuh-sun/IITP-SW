@@ -37,7 +37,7 @@ IIPT-SW 인재양성 교육 관련된 내용 정리 및 예제 샘플과 APK파�
 
 ## 실습시
 
-[예제용 API SERVER](https://github.com/yb-k/mp-jsonserver)
+[예제용 JSON SERVER 저장소](https://github.com/yb-k/mp-jsonserver)
 
 위 프로젝트 다운로드 후 아래의 커맨드 입력
 
@@ -58,7 +58,7 @@ todos.html에서 할일 목록에 대한 기능 구현
 
 - 증상
 - 작성한 소스코드
-- browser 로그 
+- `browser` 로그 
 - `logcat` 로그 (관련 있는 경우)
 
 위 정보를 슬랙을 통해 문제가 발생한 를 메세지로 전달
@@ -74,8 +74,9 @@ todos.html에서 할일 목록에 대한 기능 구현
 
 1. 라이브러리 설치
 
- 현재 저장소 내의 `mcore.min.js`, `mcore.extens.js`, `wnInterface.js`를 `public`폴더 내에
-`js/morpheus/` 경로로 추가
+ 현재 저장소 내의 `mcore.min.js`, `mcore.extens.js`, `wnInterface.js`를
+ 
+ `public`폴더 내에 `js/morpheus/` 경로로 추가
 
 2. 라이브러리 적용
 
@@ -106,7 +107,7 @@ todos.html에서 할일 목록에 대한 기능 구현
 ```js
 new HtmlWebpackPlugin({
   // ..some options
-		scriptLoading: 'blocking',
+	scriptLoading: 'blocking',
 })
 ```
 
