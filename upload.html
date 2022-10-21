@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/todos.html">Todos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active">파일 업로드</a>
+      </li>
+    </ul>
+    <h1>Upload</h1>
+    <button id="btn-upload" type="button" class="btn btn-primary">이미지 선택</button>
+    <img style="display: none; height: 200px;" id="img-preview"/>
+  </div>
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="./js/lib/mcore.min.js"></script>
+<script src="./js/upload.js"></script>
+</html>

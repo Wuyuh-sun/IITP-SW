@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/todos.html">Todos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/upload.html">파일 업로드</a>
+      </li>
+    </ul>
+    <h1>Login</h1>
+    <form id="form-login" onsubmit="return false">
+      <div class="mb-3">
+        <label for="username" class="form-label">UserName</label>
+        <input type="text" class="form-control" id="username" name="username">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+      <button type="submit" class="btn btn-primary">로그인</button>
+    </form>
+  </div>
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="./js/lib/mcore.min.js"></script>
+<script src="./js/index.js"></script>
+</html>

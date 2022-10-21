@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active">Todos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/upload.html">파일 업로드</a>
+      </li>
+    </ul>
+    <h1>TODO LIST</h1>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">    
+        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+        <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+        <span class="badge text-bg-primary fl-right">완료</span>
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+        <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+        <span class="badge text-bg-secondary fl-right">미완료</span>
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+        <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+        <span class="badge text-bg-secondary fl-right">미완료</span>
+      </li>
+    </ul>
+    <div>
+      
+      <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">추가</button>
+      <button type="button" class="btn btn-danger">삭제</button>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="mb-3">
+            <label for="content" class="form-label">할일</label>
+            <input type="text" class="form-control" id="content" name="content">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">등록</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="./js/lib/mcore.min.js"></script>
+</html>
